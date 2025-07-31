@@ -73,6 +73,7 @@ def main():
     st.sidebar.write("Built with :blue[Streamlit] and :orange[Gemini]")
 
     st.title(" Advanced AI Code Reviewer")
+    st.write("A PRADHAN PRODUCT")
     st.write("Paste your code below or upload a file for review.")
 
     uploaded_file = st.file_uploader("Upload a code file (optional)", type=["py", "js", "java", "cpp", "c", "ts", "go", "rb", "php"])
