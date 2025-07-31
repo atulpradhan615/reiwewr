@@ -63,21 +63,10 @@ def review_code(code):
 
 def main():
     st.set_page_config(page_title="Advanced Code Reviewer", layout="wide")
-    st.sidebar.title("Instructions")
-    st.sidebar.info("""
-    - Paste your code or upload a file.
-    - Click 'Review Code' to get an AI-powered review.
-    - See code stats, syntax highlighting, and detailed suggestions.
-    """)
-    st.sidebar.markdown("---")
-    st.sidebar.write("Built with :blue[Streamlit] and :orange[Gemini]")
 
     st.title(" Advanced AI Code Reviewer")
     st.write("A PRADHAN PRODUCT")
     st.write("Paste your code below or upload a file for review.")
-
-    uploaded_file = st.file_uploader("Upload a code file (optional)", type=["py", "js", "java", "cpp", "c", "ts", "go", "rb", "php"])
-    code_from_file = get_code_from_upload(uploaded_file)
 
     usercode = st.text_area("Paste your code here:", value=code_from_file, height=300)
 
