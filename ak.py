@@ -68,7 +68,7 @@ def main():
     st.write("A PRADHAN PRODUCT")
     st.write("Paste your code below or upload a file for review.")
 
-    usercode = st.text_area("Paste your code here:", value=code_from_file, height=300)
+    usercode = st.text_area("Paste your code here:", height=300)
 
     if usercode:
         st.markdown("### Code Preview")
